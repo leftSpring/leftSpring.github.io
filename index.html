@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="LSwebMainPage.css">
+<link rel="stylesheet" href="./LSwebMainPage2Devices.css">
 </head>
 <body>
   <div class="navbar">
@@ -17,32 +17,61 @@
 
   <div class="hero-section">
     <div class="hero-text">
-      <h1>
+      <h1 class="scale-h1">
         A second chance<br> 
         to see our beloved Spring
       </h1>
-      <h2>
+      <h2 class="scale-text">
         Food,the gifts from our earth.<br>
         Use LEFTSPRING to give it a second chance.
       </h2>
-      <h3>
+      <h3 class="scale-text">
         WHO ARE WE:
       </h3>
-      <p>Dedicated to environmental conservation, we focused on reducing greenhouse gas emissions by tackling unnecessary food waste and minimizing the strain on public resources linked to the production and management of surplus food.
-        Passionate wastage preventer dedicated to addressing food waste at closing time and helping merchants financially recover the manufacturing cost of leftover food.
-        <br>Affordable meal provider intended to providing an opportunity for communities to enjoy affordable meals and allowing people to explore delicious cuisines at a low cost.
-        <div class="apple-google">
-            <img src="./Resource/Apple.png" alt="LeftSpring iPhone App">
-            <img src="./Resource/Google.png" alt="LeftSpring Anroid App">
+      <div class="hero-content">
+        <div class="scale-text">
+        <span>Dedicated to environmental conservation, we focused on reducing greenhouse gas emissions by tackling unnecessary food waste and minimizing the strain on public resources linked to the production and management of surplus food.
+          Passionate wastage preventer dedicated to addressing food waste at closing time and helping merchants financially recover the manufacturing cost of leftover food.
+          <br>Affordable meal provider intended to providing an opportunity for communities to enjoy affordable meals and allowing people to explore delicious cuisines at a low cost.
+        </span>
         </div>
-      </p>
-    </div>
-
+      </div>
+        <div class="apple-google">
+            <img src="./Resource/Apple.png" alt="LeftSpring iPhone App" class="appLogo">
+            <img src="./Resource/Google.png" alt="LeftSpring Anroid App" class="appLogo">
+        </div>
+     
+    </div>  
     <div class="hero-image">
-      <img src="./Resource/Phone.png" alt="Hero Image">
+          <img src="./Resource/Phone.png" alt="Hero Image">
     </div>
+  
 
   </div>
+  <div class="sub-section">
+    <!--<img src="./Resource/circle_and_logo.png" class ="temp"-->
+    <svg width="100vw" height="100%" class="overlay"> <!-- 创建一个SVG画布 -->
+        <circle cx="220" cy="850" r="350" fill="#247D49" class="circle"/>
+        <circle cx="1200" cy="1020" r="920" fill="#247D49"  class="circle"/>
+    </svg>
+    <img src="./Resource/Logo.png" class="sublogo">
+    <div class="sub-title">
+      <h2 >
+        How We Reduce Food Waste?
+      </h2>
+    </div>
+
+    <div class="sub-text">
+      <span>
+        In Australia, approximately 7.3 million tonnes of food is wasted each year. Our goal is to create a platform where merchants can sell surplus food items in term of surprise bag, which can be used to prepare a meal, at a discounted price. This ena- bles them to recover costs, while also giving others the opportunity to explore and enjoy new cuisines at a lower expense. Every surprise bag a customer receives saves roughly 2.5kg of CO2 emission.
+      </span>
+    </div>
     
+  </div>
+  <div class="sequencePage">
+    <h1>Our system for you</h1>
+    <img src="./Resource/流程图.png">
+  </div>
+  <div class="policy"><a href="/policy.html" target="_blank" style="color: #247D49;">Our Policy</a></div>
 </body>
 </html>

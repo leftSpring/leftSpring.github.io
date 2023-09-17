@@ -1,0 +1,684 @@
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot");
+  src: url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.svg#MyriadPro-Regular")format("svg");
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x:hidden;
+    min-width: 1440px;
+    max-width: 1980px;
+    font-family: "MyriadPro-Regular";
+  }
+
+
+  @media screen and (max-width: 1650px) {
+    :root {
+      font-size: 14px;
+    }
+    .navbar {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.625rem 1.25rem; /* 10px 20px in rem */
+      
+    }
+  
+    .logo {
+      font-size: 1.5rem; /* 24px in rem */
+      font-weight: bold;
+  
+    }
+  
+    .logo img {
+      width: 22%; /* 50px in rem */
+      height: auto;
+      vertical-align: middle;
+    }
+  
+    .btn-img {
+      cursor: pointer;
+      padding: 0.3125rem; /* 5px in rem */
+    }
+  
+    .btn-img img {
+      width: 50%; /* 30px in rem */
+      height: auto;
+    }
+  
+    .hero-section {
+      display: flex; /* 创建一个水平排列的容器 */
+      flex-wrap: wrap;
+      /*align-items: center; /* 垂直居中对齐内容 */
+      position: relative;
+      min-width: 1180.81px;
+      min-height: 619.25px;
+      margin: 3vw 9vw 0vw 9vw;
+      background: transparent;
+      border-radius: 8px;
+      /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+      padding-top: 3vw;
+  
+      z-index: 1;
+  
+    }
+  
+    .hero-text {
+      flex: 1;
+      flex-basis: 65%;
+      width: 65%;
+      height: fit-content;
+  
+    }
+  
+    .hero-text h1 {
+      font-size: 5.2rem;
+      margin: 0;
+      line-height: 5.2rem;
+      min-width: 936px;
+      min-height: 145.594px;
+    }
+  
+    .hero-text h2 {
+      font-size: 2.1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: #247D49;
+      min-width: 720px;
+      min-height: 68px;
+    }
+  
+    .hero-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      min-width: 720px;
+      min-height: 29.5px;
+    }
+  
+    .hero-text span {
+      display: inline-block;
+      font-size: 1.4rem;
+      color: black;
+      margin-top: 0.5rem;
+      line-height: 2rem;
+      word-wrap: break-word;
+      text-align: justify;
+      width: 68rem;
+      min-width: 767.531px;
+      min-height: 200px;
+    }
+  
+    .hero-content {
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      flex: 1; /* 占据剩余的空间 */
+    }
+  
+    .hero-image {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      position: relative;
+      z-index: 3;
+      flex-basis: 35%;
+      min-width: 413.289px;
+      min-height: 500px;
+    }
+  
+  
+    .hero-image img {
+        display: inline-block;
+        width: 23vw;
+        height: 1px;
+        padding-left: 2.5vw;
+        vertical-align: middle;
+        min-width: 300px;
+        min-height: 567px;
+        z-index: 5;
+    }
+  
+    .scale-text {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      width:50vw;
+    }
+    .scale-h1 {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      width:65vw;
+    }
+    .apple-google img{
+      max-width: 180px;
+      height: auto;
+    }
+  
+    .sub-section {
+      position: relative;
+      bottom: 130px;
+      width: 100vw;
+      height: 700px;
+      z-index: 0;
+      margin-left: 0;
+    }
+  
+    .overlay {
+      position: relative;
+      top: -100px;
+      z-index: 3;
+      margin: 0;
+    }
+  
+    .circle {
+      position: relative;
+      z-index: 4;
+    }
+  
+    .sublogo {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top: -520px;
+      right: -300px;
+      z-index: 4;
+    }
+    .sub-title{
+      position: absolute;
+      top:150px;
+      right:150px;
+      z-index: 5;
+    }
+    .sub-title h2{
+      color: #b5ffaf;
+      text-decoration: underline;
+      text-underline-position: below;
+      font-size: 3.5rem ;
+    }
+  
+    .sub-text{
+      position: absolute;
+      top:250px;
+      right:150px;
+      color:white;
+      width:700px;
+      z-index: 5;
+      line-height: 2rem;
+      text-align: justify;
+    }
+    .sub-text span{
+      font-size: 1.5rem;
+    }
+  
+    .sequencePage {
+      position: relative;
+      font-size: 4rem;
+      color: #247D49;
+      text-align: center;
+      width: 100vw;
+      bottom: 250px;
+    }
+    .sequencePage img {
+      width:90vw;
+    }
+    .policy {
+      width: 100vw;
+      font-size: 3rem;
+      margin-bottom: 7vh;
+      text-align: center;
+    }
+  
+  }
+
+  
+  /* 在大屏幕上使用较大的字体大小 */
+  @media screen and (min-width: 1800px) {
+    :root {
+      font-size: 16px;
+    }
+    .navbar {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.625rem 1.25rem; /* 10px 20px in rem */
+      
+    }
+  
+    .logo {
+      font-size: 1.5rem; /* 24px in rem */
+      font-weight: bold;
+  
+    }
+  
+    .logo img {
+      width: 22%; /* 50px in rem */
+      height: auto;
+      vertical-align: middle;
+    }
+  
+    .btn-img {
+      cursor: pointer;
+      padding: 0.3125rem; /* 5px in rem */
+    }
+  
+    .btn-img img {
+      width: 50%; /* 30px in rem */
+      height: auto;
+    }
+  
+    .hero-section {
+      display: flex; /* 创建一个水平排列的容器 */
+      flex-wrap: wrap;
+      /*align-items: center; /* 垂直居中对齐内容 */
+      position: relative;
+      min-width: 1180.81px;
+      min-height: 619.25px;
+      height: 80vh;
+      margin: 3vw 9vw 0vw 9vw;
+      background: transparent;
+      border-radius: 8px;
+      /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+      padding-top: 3vw;
+  
+      z-index: 1;
+  
+    }
+  
+    .hero-text {
+      flex: 1;
+      flex-basis: 65%;
+      width: 65%;
+      height: fit-content;
+  
+    }
+  
+    .hero-text h1 {
+      font-size: 5.2rem;
+      margin: 0;
+      line-height: 5.2rem;
+      min-width: 936px;
+      min-height: 145.594px;
+    }
+  
+    .hero-text h2 {
+      font-size: 2.1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: #247D49;
+      min-width: 720px;
+      min-height: 68px;
+    }
+  
+    .hero-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      min-width: 720px;
+      min-height: 29.5px;
+    }
+  
+    .hero-text span {
+      display: inline-block;
+      font-size: 1.77rem;
+      color: black;
+      margin-top: 0.5rem;
+      line-height: 2.6rem;
+      word-wrap: break-word;
+      text-align: justify;
+      width: 68rem;
+      min-width: 767.531px;
+      min-height: 200px;
+  }
+  
+    .hero-content {
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      flex: 1; /* 占据剩余的空间 */
+    }
+  
+    .hero-image {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      position: relative;
+      z-index: 3;
+      flex-basis: 35%;
+      min-width: 413.289px;
+      min-height: 500px;
+    }
+  
+  
+    .hero-image img {
+        display: inline-block;
+        width: 26vw;
+        padding-left: 2.5vw;
+        vertical-align: middle;
+        min-width: 300px;
+        min-height: 567px;
+        z-index: 5;
+    }
+  
+    .scale-text {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      width:50vw;
+    }
+    .scale-h1 {
+      flex: 1; /* 占据剩余的空间 */
+      display: flex; /* 创建一个水平排列的容器 */
+      align-items: center; /* 垂直居中对齐内容 */
+      width:65vw;
+    }
+    .apple-google img{
+      max-width: 250px;
+      height: auto;
+    }
+  
+    .sub-section {
+      position: relative;
+      bottom: 10vh;
+      width: 100vw;
+      height: 800px;
+      z-index: 0;
+      margin-left: 0;
+  
+    }
+  
+    .overlay {
+      position: relative;
+      top: -10vh;
+      z-index: 3;
+      margin: 0;
+    }
+  
+    .circle {
+      position: relative;
+      z-index: 4;
+    }
+  
+    .sublogo {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top: -620px;
+      right: -300px;
+      z-index: 4;
+    }
+    .sub-title{
+      position: absolute;
+      top:180px;
+      right:300px;
+      z-index: 5;
+    }
+    .sub-title h2{
+      color: #b5ffaf;
+      text-decoration: underline;
+      text-underline-position: below;
+      font-size: 4rem ;
+    }
+  
+    .sub-text{
+      position: absolute;
+      top:350px;
+      right:300px;
+      color:white;
+      width:1000px;
+      z-index: 5;
+      line-height: 2rem;
+      text-align: justify;
+    }
+    .sub-text span{
+      font-size: 1.7rem;
+    }
+  
+    .sequencePage {
+      position: relative;
+      font-size: 4rem;
+      color: #247D49;
+      text-align: center;
+      width: 100vw;
+      bottom: 20vh;
+    }
+    .sequencePage img {
+      width:90vw;
+    }
+    .policy {
+      width: 100vw;
+      font-size: 3rem;
+      margin-bottom: 7vh;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+@media (min-width: 1650px) and (max-width: 1850px) {
+  :root {
+    font-size: 15px;
+  }
+  .navbar {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem; /* 10px 20px in rem */
+    
+  }
+
+  .logo {
+    font-size: 1.5rem; /* 24px in rem */
+    font-weight: bold;
+
+  }
+
+  .logo img {
+    width: 22%; /* 50px in rem */
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .btn-img {
+    cursor: pointer;
+    padding: 0.3125rem; /* 5px in rem */
+  }
+
+  .btn-img img {
+    width: 50%; /* 30px in rem */
+    height: auto;
+  }
+
+  .hero-section {
+    display: flex; /* 创建一个水平排列的容器 */
+    flex-wrap: wrap;
+    /*align-items: center; /* 垂直居中对齐内容 */
+    position: relative;
+    min-width: 1180.81px;
+    min-height: 619.25px;
+    margin: 3vw 9vw 0vw 9vw;
+    background: transparent;
+    border-radius: 8px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    padding-top: 3vw;
+
+    z-index: 1;
+
+  }
+
+  .hero-text {
+    flex: 1;
+    flex-basis: 65%;
+    width: 65%;
+    height: fit-content;
+
+  }
+
+  .hero-text h1 {
+    font-size: 5.2rem;
+    margin: 0;
+    line-height: 5.2rem;
+    min-width: 936px;
+    min-height: 145.594px;
+  }
+
+  .hero-text h2 {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #247D49;
+    min-width: 720px;
+    min-height: 68px;
+  }
+
+  .hero-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    min-width: 720px;
+    min-height: 29.5px;
+  }
+
+  .hero-text span {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 0.5rem;
+    line-height: 2rem;
+    word-wrap: break-word;
+    text-align: justify;
+    width: 68rem;
+    min-width: 767.531px;
+    min-height: 200px;
+  }
+
+  .hero-content {
+    display: flex; /* 创建一个水平排列的容器 */
+    align-items: center; /* 垂直居中对齐内容 */
+    flex: 1; /* 占据剩余的空间 */
+  }
+
+  .hero-image {
+    flex: 1; /* 占据剩余的空间 */
+    display: flex; /* 创建一个水平排列的容器 */
+    position: relative;
+    z-index: 3;
+    flex-basis: 35%;
+    min-width: 413.289px;
+    min-height: 500px;
+  }
+
+
+  .hero-image img {
+      display: inline-block;
+      width: 23vw;
+      padding-left: 2.5vw;
+      vertical-align: middle;
+      min-width: 300px;
+      min-height: 567px;
+      z-index: 5;
+  }
+
+  .scale-text {
+    flex: 1; /* 占据剩余的空间 */
+    display: flex; /* 创建一个水平排列的容器 */
+    align-items: center; /* 垂直居中对齐内容 */
+    width:50vw;
+  }
+  .scale-h1 {
+    flex: 1; /* 占据剩余的空间 */
+    display: flex; /* 创建一个水平排列的容器 */
+    align-items: center; /* 垂直居中对齐内容 */
+    width:65vw;
+  }
+  .apple-google img{
+    max-width: 180px;
+    height: auto;
+  }
+
+  .sub-section {
+    position: relative;
+    bottom: 130px;
+    width: 100vw;
+    height: 700px;
+    z-index: 0;
+    margin-left: 0;
+  }
+
+  .overlay {
+    position: relative;
+    top: -100px;
+    z-index: 3;
+    margin: 0;
+  }
+
+  .circle {
+    position: relative;
+    z-index: 4;
+  }
+
+  .sublogo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -520px;
+    right: -300px;
+    z-index: 4;
+  }
+  .sub-title{
+    position: absolute;
+    top:150px;
+    right:150px;
+    z-index: 5;
+  }
+  .sub-title h2{
+    color: #b5ffaf;
+    text-decoration: underline;
+    text-underline-position: below;
+    font-size: 3.5rem ;
+  }
+
+  .sub-text{
+    position: absolute;
+    top:250px;
+    right:150px;
+    color:white;
+    width:700px;
+    z-index: 5;
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .sub-text span{
+    font-size: 1.5rem;
+  }
+
+  .sequencePage {
+    position: relative;
+    font-size: 4rem;
+    color: #247D49;
+    text-align: center;
+    width: 100vw;
+    bottom: 250px;
+  }
+  .sequencePage img {
+    width:90vw;
+  }
+  .policy {
+    width: 100vw;
+    font-size: 3rem;
+    margin-bottom: 7vh;
+    text-align: center;
+  }
+  
+  }
